@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type ="text/css">
+ body{
+ margin: 0;
+ padding: 0;
+ font-family:poppings,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+ overflow:hidden;
+ height: 100vh;
+}
+.vid-bg{
+ position:absolute;
+ right: 0;
+ bottom:0;
+ min-height:100%;
+ min-width: 100%;
+
+}
+.nav-area{
+ background: rgba(0,0,0, 0.7);
+ height: 60px;
+ position: absolute;
+ width: 100%;
+}
+
+.logo{
+ margin:0 50px;
+ height: 60px;
+ float:left;
+ color:#fff;
+ font-size: 35px;
+ text-transform: capitalize;
+ font-weight: bold;
+ letter-spacing: 2px;
+ font-style: normal;
+}
+
+.menu-area{
+ float:right;
+ list-style:none;
+ margin:20px;
+}
+
+.menu-area li{
+ display:inline-block;
+ margin:0 5px;
+}
+
+.menu-area li a{
+ text-decoration: none;
+ color:#fff;
+ padding:5px 10px;
+ letter-spacing:2px;
+}
+
+.menu-area li a:hover{
+ color:aqua;
+}
+.banner-text{
+  position:absolute;
+ top: 50%;
+ left:50%;
+ transform: translate(-50%,-50%); 
+ text-align: center;
+
+ 
+}
+.banner-text h2{
+ color:#fff;
+ font-size: 4em;
+ margin:0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ position: relative;
+ font-weight: 900;
+ z-index: 1;
+ overflow: hidden;
+}
+h2:before{
+content:'';
+position :absolute;
+left:0;
+width: 120%;
+height:100%;
+ /* background: linear-gradient(90deg,transparent 0%,#fff 5%,#fff 100%); */
+animation: animate 5.5s linear forwords;
+
+}
+@keyframes animate{
+0%{
+   left:110%;
+    
+}
+100%{
+   left:-20%;
+    
+}
+}
+video{
+   position: absolute;
+   top: 0%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index:2;
+   pointer-events:none ;
+   mix-blend-mode: screen;
+}
+
+
+
+
+h2 span{
+   color:red;
+}
+
+.banner-text p{
+ color:#fff;
+ font-size:18px;
+ margin: 0;
+ font-weight: bold;
+ 
+ 
+}
+
+.btn{
+ display: inline-block;
+ margin-top: 5%;
+ background: transparent;
+ border:0;
+ font-size: 20px;
+ text-transform: uppercase;
+ border: 5px solid #fff;
+ padding: 10px 25 px;
+ color:#ffff;
+ border-radius: 10px;
+
+
+}
+#team
+{
+   padding-top:50px ;
+   padding-bottom: 50px;
+   color: #fff;
+   
+}
+
+h1{
+   text-align: center;
+   color: #fff;
+   padding-bottom: 10px;
+}
+h1::after
+{
+   content:'';
+   background: #007bff;
+   display: block;
+   height: 3px;
+   width: 170px;
+   margin:20px auto 5px;
+}
+
+.responsive {
+   width: 100%;
+   max-width: 400px;
+   height: auto;
+ }
+
+ .profile-pic
+ {
+   margin-top:25px;
+   
+
+}
+.profile-pic .img-box{
+   opacity: 1;
+   display:block ;
+   position:relative;
+   border-radius: 50%;
+   
+}
+
+.profile-pic .img-box img
+{
+   filter : grayscale(1)
+}
+
+.profile-pic .img-box img:hover
+{
+   filter : grayscale(0);
+   cursor: pointer;
+}
+.profile-pic h2{
+   font-size: 22px;
+   font-weight:bold;
+   margin-top:15px;
+   color:#007bff!important;
+}
+.profile-pic h3{
+   font-size: 15px;
+   font-weight:bold;
+   margin-top:15px;
+   color:#fff;
+}
+.profile-pic p{
+   color: #fff;
+}
+#team .fa
+{
+   height:25px;
+   width:22px;
+   color:#f2f4f7;
+   background: #ffff;
+   padding:4px;
+   border-radius:50%;
+}
+.img-box ul{
+   padding: 15px 0;
+   position: absolute;
+   z-index: 2;
+   bottom: 0;
+   left: 50%;
+   transform:translateX(-50%);
+   opacity: 0;
+}
+.img-box ul li{
+   padding: 5px;
+   display: inline-block;
+}
+.img-box:hover ul
+{
+   opacity: 1;
+}
+.img-box ul,.img-box li
+{
+   transition: 0.5s;
+}
+#contact
+{
+   background-color: #efefef;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   color: #777;
+}
+.contact-form
+{
+   padding: 15px;
+
+}
+.form-control
+{
+   border-radius: 0%;
+   border: none;
+
+}
+
+::placeholder
+{
+color: #999999;
+}
+
+.fallow
+{
+   background: #fff;
+   padding: 10px;
+   margin: 15px;
+
+}
+.contact-info.fa
+{
+   margin:10px;
+   color: #007bff;
+   font-weight: bold;
+
+}
+</style>
+ <title></title>
+ <!-- <iframe width="0" src="/static/Jarico - Island [NCS BEST OF] (online-audio-converter.com).mp3" frameborder="0" allowfullscreen></iframe> -->
+</head>
+<body>
+ <header>
+  <video src="/login/signup/img/Another Generic Recruitment Video - Fiverr (online-video-cutter.com).mp4" class="vid-bg" autoplay loop muted></video>
+   <div class="nav-area">
+    <div class="logo">Elitecoders</div>
+    <ul class="menu-area">
+     <!-- <li><a href="#">DASH</a></li>
+     <li><a href="#">SEARCH</a></li>
+     <li><a href="/team.html">TEAM</a></li>
+     <li><a href="/contact.html">CONTACT</a></li> -->
+
+    </ul>
+   </div>
+  <div class="banner-text">
+   <!-- <video src="/static/particles.mp4"muted="" autoplay=""></video> -->
+   <h2><span>B</span>est<hr> <span>P</span>lace for all the needs</h2>
+   <button></button>
+   <p>one solution to a problem </p>
+   <a href="#" class ="btn">Main</a>
+  </div>
+ </header>
+</body>
+</html>
