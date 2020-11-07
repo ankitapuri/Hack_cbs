@@ -36,7 +36,7 @@ header{
  font-size: 35px;
  text-transform: capitalize;
  font-weight: bold;
- letter-spacing: 2px;
+ letter-spacing: 5px;
  font-style: normal;
 }
 
@@ -49,6 +49,7 @@ header{
 .menu-area li{
  display:inline-block;
  margin:0 5px;
+ letter-spacing: 10px;
 }
 
 .menu-area li a{
@@ -83,25 +84,7 @@ header{
  z-index: 1;
  overflow: hidden;
 }
-h2:before{
-content:'';
-position :absolute;
-left:0;
-width: 120%;
-height:100%;
- /* background: linear-gradient(90deg,transparent 0%,#fff 5%,#fff 100%); */
-animation: animate 5.5s linear forwords;
 
-}
-@keyframes animate{
-0%{
-   left:110%;
-    
-}
-100%{
-   left:-20%;
-    
-}
 }
 video{
    position: absolute;
@@ -145,165 +128,27 @@ h2 span{
 
 
 }
-#team
-{
-   padding-top:50px ;
-   padding-bottom: 50px;
-   color: #fff;
-   
-}
 
-h1{
-   text-align: center;
-   color: #fff;
-   padding-bottom: 10px;
-}
-h1::after
-{
-   content:'';
-   background: #007bff;
-   display: block;
-   height: 3px;
-   width: 170px;
-   margin:20px auto 5px;
-}
 
-.responsive {
-   width: 100%;
-   max-width: 400px;
-   height: auto;
- }
-
- .profile-pic
- {
-   margin-top:25px;
-   
-
-}
-.profile-pic .img-box{
-   opacity: 1;
-   display:block ;
-   position:relative;
-   border-radius: 50%;
-   
-}
-
-.profile-pic .img-box img
-{
-   filter : grayscale(1)
-}
-
-.profile-pic .img-box img:hover
-{
-   filter : grayscale(0);
-   cursor: pointer;
-}
-.profile-pic h2{
-   font-size: 22px;
-   font-weight:bold;
-   margin-top:15px;
-   color:#007bff!important;
-}
-.profile-pic h3{
-   font-size: 15px;
-   font-weight:bold;
-   margin-top:15px;
-   color:#fff;
-}
-.profile-pic p{
-   color: #fff;
-}
-#team .fa
-{
-   height:25px;
-   width:22px;
-   color:#f2f4f7;
-   background: #ffff;
-   padding:4px;
-   border-radius:50%;
-}
-.img-box ul{
-   padding: 15px 0;
-   position: absolute;
-   z-index: 2;
-   bottom: 0;
-   left: 50%;
-   transform:translateX(-50%);
-   opacity: 0;
-}
-.img-box ul li{
-   padding: 5px;
-   display: inline-block;
-}
-.img-box:hover ul
-{
-   opacity: 1;
-}
-.img-box ul,.img-box li
-{
-   transition: 0.5s;
-}
-#contact
-{
-   background-color: #efefef;
-   padding-top: 40px;
-   padding-bottom: 40px;
-   color: #777;
-}
-.contact-form
-{
-   padding: 15px;
-
-}
-.form-control
-{
-   border-radius: 0%;
-   border: none;
-
-}
-
-::placeholder
-{
-color: #999999;
-}
-
-.fallow
-{
-   background: #fff;
-   padding: 10px;
-   margin: 15px;
-
-}
-.contact-info.fa
-{
-   margin:10px;
-   color: #007bff;
-   font-weight: bold;
-
-}
 </style>
  <title></title>
  <!-- <iframe width="0" src="/static/Jarico - Island [NCS BEST OF] (online-audio-converter.com).mp3" frameborder="0" allowfullscreen></iframe> -->
 </head>
 <body>
  <header>
-  <video src="/login/signup/img/Another Generic Recruitment Video - Fiverr (online-video-cutter.com).mp4" class="vid-bg" autoplay loop muted></video>
+  <video src="/signup/img/Another Generic Recruitment Video - Fiverr (online-video-cutter.com).mp4" class="vid-bg" autoplay loop muted></video>
    <div class="nav-area">
     <div class="logo">Elitecoders</div>
     <ul class="menu-area">
-     <!-- <li><a href="#">DASH</a></li>
+     <li><a href="#">DASHBOARD</a></li>
      <li><a href="#">SEARCH</a></li>
-     <li><a href="/team.html">TEAM</a></li>
-     <li><a href="/contact.html">CONTACT</a></li> -->
-
+    
     </ul>
    </div>
   <div class="banner-text">
-   <!-- <video src="/static/particles.mp4"muted="" autoplay=""></video> -->
    <h2><span>B</span>est<hr> <span>P</span>lace for all the needs</h2>
-   <button></button>
    <p>one solution to a problem </p>
-   <a href="#" class ="btn">Main</a>
+   <a href="#" class ="btn">DASH</a>
   </div>
  </header>
 </body>
