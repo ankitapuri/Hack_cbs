@@ -1,0 +1,179 @@
+
+	*{
+        background-color: rgb(7, 15, 19);
+      }
+      
+      body{
+        background-color: rgb(7, 15, 19);
+      }
+      /* Dashboard sliding */
+      h1{
+        padding-left: 3em;
+        padding-top: 0.4em;
+        color: white;
+        font-size:50px;
+      }
+      .slide-right {
+        width: 100%;
+        overflow: hidden;
+        
+      }
+      
+      .slide-right h1 {
+        animation: 1s slide-right;
+        animation-delay: 1s;
+      }
+      
+      @keyframes slide-right {
+        from {
+          margin-left: -700px;
+        }
+      
+        to {
+          margin-left: 0%;
+        }
+      }
+      p{
+        color: rgb(94, 87, 87);
+        font-size: 2em;
+      }
+      /*  Information */
+      img{
+        width: 70pt;
+      }
+      .details{
+        padding-top:1em;
+      }
+      /* To-do List */
+      .to-dolist {
+        display:block;
+        width: 400px;
+        margin: 10px auto 0;
+        float: right;
+      }
+      
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li * {
+        float: left;
+      }
+      li, h3 {
+        clear:both;
+        list-style:none;
+      }
+      input, button {
+        outline: none;
+      }
+      button {
+        background: none;
+        border: 0px;
+        color: #888;
+        font-size: 15px;
+        width: 60px;
+        margin: 5px 0 0;
+        font-family: Lato, sans-serif;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #333;
+      }
+      /* Heading */
+      h3,
+      label[for='new-task'] {
+        color: rgb(150, 137, 137);
+        font-weight: 700;
+        font-size: 20px;
+        border-bottom: 2px solid #333;
+        padding: 10px 0 10px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      input[type="text"] {
+        margin: 0;
+        font-size: 18px;
+        line-height: 18px;
+        height: 25px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: 6px;
+        font-family: Lato, sans-serif;
+        color: rgb(82, 53, 179);
+      }
+      input[type="text"]:focus {
+        color: rgb(80, 93, 207);
+      }
+      
+      /* New Task */
+      label[for='new-task'] {
+        display: block;
+        margin: 0 0 20px;
+      }
+      input#new-task {
+        float: left;
+        width: 318px;
+      }
+      p > button:hover {
+        color: #0FC57C;
+      }
+      
+      /* Task list */
+      li {
+        overflow: hidden;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+      }
+      li > input[type="checkbox"] {
+        margin: 0 10px;
+        position: relative;
+        top: 15px;
+      }
+      li > label {
+        font-size: 18px;
+        line-height: 40px;
+        width: 237px;
+        padding: 0 0 0 11px;
+        color: wheat;
+      }
+      li >  input[type="text"] {
+        width: 226px;
+      }
+      li > .delete:hover {
+        color: #CF2323;
+      }
+      
+      /* Completed */
+      #completed-tasks label {
+        text-decoration: line-through;
+        color: rgb(90, 221, 171);
+      }
+      
+      /* Edit Task */
+      ul li input[type=text] {
+        display:none;
+      }
+      
+      ul li.editMode input[type=text] {
+        display:block;
+      }
+      
+      ul li.editMode label {
+        display:none;
+      }
+    
+      /* Internship Tracker */
+      .form-group{
+        padding-top: 1em;
+        display: block;
+        float: left;
+      }
+      h2{
+        color: rgb(65, 44, 97);
+      }
+     label{
+         font-size: 20px;
+         color: turquoise;
+         padding:0.4em;
+      }
