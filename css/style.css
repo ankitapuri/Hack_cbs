@@ -20,8 +20,8 @@
       }
       
       .slide-right h1 {
-        animation: 1s slide-right;
-        animation-delay: 1s;
+        animation: 2s slide-right;
+        animation-delay: 0.2s;
       }
       
       @keyframes slide-right {
