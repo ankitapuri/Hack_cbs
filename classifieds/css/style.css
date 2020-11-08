@@ -11,8 +11,8 @@ h1{
   }
   
   .slide-right h1 {
-    animation: 1s slide-right;
-    animation-delay: 1s;
+    animation: 2s slide-right;
+    animation-delay: 0.2s;
   }
   
   @keyframes slide-right {
@@ -28,6 +28,8 @@ h1{
     width: 21em;
     height: 25em;
     margin: 5% 0%;
+    background-color:white;
+    border-radius: 10px;
   }
   
   .card-body{
@@ -35,13 +37,11 @@ h1{
     padding: 6% 0%;
   }
   
-  body {
-      background-color:rgb(7, 15, 19);;
-  }
+  
   img{
-      padding-top: 0.1em;
       width: 12em;
       height:10em;
+      border-radius: 20px;
        
   }
   button.btn.btn-warning.btn-sm {
@@ -49,4 +49,20 @@ h1{
       
   }
 
- 
+  body {
+    background: linear-gradient(-45deg, #000000, #333232, #676969, #5e5f61);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
