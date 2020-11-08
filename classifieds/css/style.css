@@ -1,0 +1,52 @@
+h1{
+    padding-left: 3em;
+    padding-top: 0.4em;
+    color: white;
+    font-size:50px;
+  }
+  .slide-right {
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .slide-right h1 {
+    animation: 1s slide-right;
+    animation-delay: 1s;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -700px;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+.card{
+    width: 21em;
+    height: 25em;
+    margin: 5% 0%;
+  }
+  
+  .card-body{
+    margin: 0% 0% 0% 3%;
+    padding: 6% 0%;
+  }
+  
+  body {
+      background-color:rgb(7, 15, 19);;
+  }
+  img{
+      padding-top: 0.1em;
+      width: 12em;
+      height:10em;
+       
+  }
+  button.btn.btn-warning.btn-sm {
+      padding: 1px;
+      
+  }
+
+ 
