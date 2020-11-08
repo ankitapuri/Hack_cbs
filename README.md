@@ -13,4 +13,4 @@ We give you **Marshal**.
 - Every user can create their own **_personal account_** to track their progress.
 - A **_personalized dashboard_** has been provided to the users.
 - The users can *add* and *track* their **_tasks/internships_** in this dashboard.
-- The users can also search for new internships or jobs using our Classifides Feature.
+- The users can also search for new internships or jobs using our **Hunt** Feature.
